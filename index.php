@@ -8,13 +8,15 @@ $result =mysqli_query($conn,$query) or die(mysql_error());
 $ratenow = mysqli_fetch_array( $result );
 
 ?>
+  <div class="container">
 
+  
 
                <header class="masthead">
                          <div class="container">
                     
                          <div class="intro-text">
-                              <div class="intro-lead-in">LAO EXCHANGE FOREX</div>
+                              <div class="intro-lead-in">LAOS PAYMENT</div>
                               <div class="text-small">บริการของเรา</div>
                               <div class="col" style="padding:20px;">
                                    <img src="assets/images/BCELLOGO.png" alt="" style="max-height:50px;">
@@ -22,8 +24,8 @@ $ratenow = mysqli_fetch_array( $result );
                                    <img src="assets/images/Exness.png" alt="" style="max-height:50px;">
                               </div>
 
-                              <a href=""  data-toggle="modal" data-target="#modaldeposit" class="btn btn-primary">ฝากเงินตอนนี้!</a>
-                              <a href=""  data-toggle="modal" data-target="#modalwithdraw" class="btn btn-danger">ถอดเงินตอนนี้!</a>
+                              <a href=""  data-toggle="modal" data-target="#modaldeposit" class="btn btn-primary">แจ้งฝากเงินตอนนี้ !</a>
+                              <a href=""  data-toggle="modal" data-target="#modalwithdraw" class="btn btn-danger">แจ้งถอนเงินตอนนี้ !</a>
                          </div>
                          </div>
                     
@@ -136,7 +138,7 @@ aria-hidden="true">
       <table class="table table-hover">
         <thead>
           <tr>
-            <th>ชื่อ</th>
+            <th>โบรกเกอร์</th>
             <th>ฝากขั้นต่ำ</th>
             <th>ถอดขั้นต่ำ</th>
             <th>ทำรายการ</th>
@@ -192,7 +194,7 @@ aria-hidden="true">
       <table class="table table-hover">
         <thead>
           <tr>
-            <th>ชื่อ</th>
+            <th>โบรกเกอร์</th>
             <th>ฝากขั้นต่ำ</th>
             <th>ถอดขั้นต่ำ</th>
             <th>ทำรายการ</th>
@@ -232,5 +234,5 @@ aria-hidden="true">
   
 </div>
 
-
+</div>
 <?php require('__footer.php'); ?>

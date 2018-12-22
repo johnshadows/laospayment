@@ -7,7 +7,10 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <link rel="icon" href="../assets/images/logo.png" type="image/png" sizes="16x16"> 
 
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <link rel="stylesheet" href="../assets/js/jquery.datetimepicker.css">
@@ -29,35 +32,41 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../assets/styles/main.css"/>
-    <title>LaoExchange</title>
+    <title>LaosPayment</title>
   </head>
   <body>
       <!-- Navbar -->
-    <nav style="background:black">
-      <div
-        class="d-flex"
-        id="navbar"
-        style="justify-content:flex-start; align-items: center"
-      >
-        <div id="navbrand">
-          <a class="text-white" href="#"><img src="../assets/images/logo.png" width="50" height="50"  alt="">
+  
+      <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#092542 !important;">
+  <a class="navbar-brand" href="../"><img src="../assets/images/logo.png" width="50" height="50"  alt=""></a>
+  <button class="navbar-toggler btn btn-light btn-sm" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" href="../">หน้าแรก <span class="sr-only">(current)</span></a>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          วิธีการฝาก
         </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="../how-to?page=deposit&broker=xm">โบรก XM</a>
+          <a class="dropdown-item" href="../how-to?page=deposit&broker=exness">โบรก Exness</a>
         </div>
-        <div id="nav-item" style="margin-left: 20px">
-          <a class="text-white" href="../">หน้าแรก</a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          วิธีการถอน
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="../how-to?page=withdraw&broker=xm">โบรก XM</a>
+          <a class="dropdown-item" href="../how-to?page=withdraw&broker=exness">โบรก Exness</a>
         </div>
-        <div id="nav-item" style="margin-left: 20px">
-          <a class="text-white" href="#">วิธีการถอดเงิน</a>
-        </div>
-        <div id="nav-item" style="margin-left: 20px">
-          <a class="text-white" href="#">วิธีการฝากเงิน</a>
-        </div>
-        <div
-          class="navbar-toggle d-none"
-          style="position:absolute; align-self: center; left: 20px;"
-        >
-          <button>เพิ่มเติม</button>
-        </div>
-      </div>
-    </nav>
- 
+      </li>
+
+
+    </div>
+  </div>
+</nav>

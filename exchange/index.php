@@ -7,9 +7,9 @@ if (!isset($_GET['type']) && !isset($_GET['broker'])) {
 $type = '';
 $currency ='';
 	switch($_GET['type']){
-		case 'deposit': {$type='ฝากเงิน';$currency='LAK' ;}
+		case 'deposit': {$type='แจ้งฝากเงิน';$currency='LAK' ;}
 			break;
-		case 'withdraw': {$type='ถอดเงิน'; $currency='USD';}
+		case 'withdraw': {$type='แจ้งถอนเงิน'; $currency='USD';}
 			break;
 		default : header("location: ../");
 	}
@@ -60,7 +60,7 @@ $currency ='';
 					<div class="form-group col-sm">
 						<label for="f_date">วันที่*</label>
 						<!-- <div id="datetimepicker12"></div> -->
-						<input type="text" name="f_date" class="form-control" id="datetimepicker12">
+						<input type="text" name="f_date" class="form-control" id="datetimepicker12" required>
 						</div>
 			
 					<div class="form-group col-sm">

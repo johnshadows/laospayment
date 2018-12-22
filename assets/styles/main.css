@@ -6,28 +6,30 @@ font-family: 'Kanit', sans-serif;
   .card .content{
 padding: 15px 15px 10px 15px;
 }
-@media only screen and (max-width: 720px) {
-#navbar {
-justify-content: center !important;
-}
-#nav-item {
-display: none !important;
-}
-.navbar-toggle {
-display: inline !important;
-}
-.inp-cal {
-width: 100%;
-}
-input{
-  width: 100%;
-}
-#navbrand{
-  padding: 10px;
-}
+      @media only screen and (max-width: 720px) {
+      #navbar {
+      justify-content: center !important;
+      }
+      #nav-item {
+      display: none !important;
+      }
+      .navbar-toggle {
+      display: inline !important;
+      }
+      .inp-cal {
+      width: 100%;
+      }
+      input{
+        width: 100%;
+      }
+  }
 
-}
 
+
+  div#navbrand{
+    padding: 10px;
+  }
+  
   .broker-box {
     position: relative;
     display: inline-block;
@@ -115,4 +117,15 @@ input{
    }
    .intro-lead-in{
        font-size: 75px;
+   }
+
+   span{
+      overflow: visible !important;
+
+   }
+
+   li#how-to {
+     text-align: left !important;
+     font-size: 20px;
+    list-style-type:decimal;
    }
